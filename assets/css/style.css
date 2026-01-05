@@ -540,14 +540,14 @@ img {
         margin-inline: 1rem;
     }
     
-    .home__image,
-    .about__image{
+    .home__image
+    ,.about__image{
         width: 200px;
         height: 200px;
     }
 
-    .home__img,
-    .about__img{
+    .home__img
+    ,.about__img{
         width: 170px;
     }
 
@@ -563,7 +563,8 @@ img {
 @media screen and (min-width: 540px){
     .home__container,
     .about__container,
-    .projects__container{
+    .projects__container,
+    .resume__container{
         grid-template-columns: 400px;
         justify-content: center;
     }
@@ -586,6 +587,10 @@ img {
     }
     .home__buttons{
         justify-content: initial;
+    }
+    .projects__container,
+    .resume__container{
+        grid-template-columns: repeat(2, 350px);
     }
 }
 
