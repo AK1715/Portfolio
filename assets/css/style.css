@@ -513,6 +513,10 @@ img {
     color: var(--gray-color);
 }
 
+.resume__info address{
+    font-style: initial;
+}
+
 
 /*=============== CONTACT ===============*/
 
