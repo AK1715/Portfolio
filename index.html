@@ -90,7 +90,8 @@
 
                     <!-- ===== Add Role Here ======= -->
                     <p class="home_subtitle">
-                        Hi, I'am a <span id="home-typed">Full Stack Developer</span>
+                        <!-- Insert the professions into the js file (HOME TYPED JS), then save. -->
+                        Hi, I'am a <span id="home-typed"></span>
                     </p>
 
                     <!-- ===== Add Name Here ======= -->
@@ -103,10 +104,10 @@
 
                     <div class="home__buttons">
                         <!-- ===== ADD here Your Resume ===== -->
-                        <a href="#PDF" target="_blank" class="button">Download</a>
+                        <a href="#PDF" target="_blank" class="button">Download CV</a>
 
                         <!-- ===== ADD here Your Projects ===== -->
-                        <a href="#projects" class="button button_ghost">Projects</a>
+                        <a href="#projects" class="button button__ghost">Projects</a>
 
 
                     </div>
@@ -116,17 +117,222 @@
 
         <!-- ABOUT -->
         <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about_content">
+                    <div class="about__data">
+                        <h2 class="section__title"> About Me</h2>
 
+                        <p class="about__description">
+                            I'm a passionate developer with a strong interest in software development, open-source contributions, and always eager to learn new technologies. I thrive on challenges and aim to use my skills to create meaningful solutions.
+                        </p>
+
+                        <a href="#contact" class="button button__ghost">Contact Me</a>
+                    </div>
+
+                    <div class="about__skills">
+                        <h3 class="about__subtitle">
+                            <i class="ri-bookmark-3-fill"></i>
+                            <span>Skills</span>
+                        </h3>
+                            <!-- ADD SKILL HERE -->
+                        <ul class="about__items">
+                            <li class="about__item">HTML</li>
+                            <li class="about__item">CSS</li>
+                            <li class="about__item">React</li>
+                            <li class="about__item">JavaScript</li>
+                            <li class="about__item">Java</li>
+                            <li class="about__item">SpringBoot</li>
+                            <li class="about__item">MVC Structure</li>
+                            <li class="about__item">Php</li>
+                            <li class="about__item">Python</li>
+                            <li class="about__item">Next.js</li>
+                            <li class="about__item">Laravel</li>
+                            <li class="about__item">CodeIgniter</li>
+                            <li class="about__item">TypeScript</li>
+                            <li class="about__item">My SQL</li>
+                            <li class="about__item">Neon DB</li>
+                            <li class="about__item">Mongo DB</li>
+                            <li class="about__item">PostMan</li>
+                            <li class="about__item">GitHub</li>
+                            <li class="about__item">Docker</li>
+                            <li class="about__item">OAuth</li>
+                            <li class="about__item">Apache</li>
+                            <li class="about__item">Kafka</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about__image">
+                    <img src="assets/img/favicon.png
+                    " alt="image" class="about__img">
+                </div>
+            </div>
         </section>
 
         <!-- PROJECTS -->
         <section class="projects section" id="projects">
+            <h2 class="section__title">Projects</h2>
 
+            <div class="projects__container container grid">
+                <!-- ADD PROJECT HERE NO.1 -->
+                <article class="projects__card">
+                    <img src="assets/img/lingo.png" alt="image" class="projects_img">
+
+                    <div class="projects__data">
+                        <h3 class="projects__title">Lingo Website</h3>
+                        <p class="projects__description">Creation, design and development of a website</p>
+                        <a href="#" target="_blank" class="button button__ghost">View Project</a>
+                    </div>
+                </article>
+
+                <!-- ADD PROJECT HERE NO.2 -->
+                <article class="projects__card">
+                    <img src="assets/img/fitness.png" alt="image" class="projects_img">
+
+                    <div class="projects__data">
+                        <h3 class="projects__title">Fitness Website</h3>
+                        <p class="projects__description">Creation, design and development of a website</p>
+                        <a href="#" target="_blank" class="button button__ghost">View Project</a>
+                    </div>
+                </article>
+
+                <!-- ADD PROJECT HERE NO.3 -->
+                <article class="projects__card">
+                    <img src="assets/img/fitness.png" alt="image" class="projects_img">
+
+                    <div class="projects__data">
+                        <h3 class="projects__title">TEST 3</h3>
+                        <p class="projects__description">Creation, design and development of a website</p>
+                        <a href="#" target="_blank" class="button button__ghost">View Project</a>
+                    </div>
+                </article>
+
+                <!-- ADD PROJECT HERE NO.4 -->
+                <article class="projects__card">
+                    <img src="assets/img/fitness.png" alt="image" class="projects_img">
+
+                    <div class="projects__data">
+                        <h3 class="projects__title">TEST 4</h3>
+                        <p class="projects__description">Creation, design and development of a website</p>
+                        <a href="#" target="_blank" class="button button__ghost">View Project</a>
+                    </div>
+                </article>
+
+                <!-- ADD PROJECT HERE NO.5 -->
+                <article class="projects__card">
+                    <img src="assets/img/fitness.png" alt="image" class="projects_img">
+
+                    <div class="projects__data">
+                        <h3 class="projects__title">TEST 5</h3>
+                        <p class="projects__description">Creation, design and development of a website</p>
+                        <a href="#" target="_blank" class="button button__ghost">View Project</a>
+                    </div>
+                </article>
+
+                <!-- ADD PROJECT HERE NO.6 -->
+                <article class="projects__card">
+                    <img src="assets/img/fitness.png" alt="image" class="projects_img">
+
+                    <div class="projects__data">
+                        <h3 class="projects__title">TEST 6</h3>
+                        <p class="projects__description">Creation, design and development of a website</p>
+                        <a href="#" target="_blank" class="button button__ghost">View Project</a>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <!-- RESUME -->
         <section class="resume section" id="resume">
+            <h2 class="section__title">My Resume</h2>
+            <!-- Experience -->
+            <div class="resume__container container grid">
+                <div class="resume__content grid">
+                    <h3 class="resume__subtitle">
+                        <i class="ri-award-fill"></i>
+                        <span>Experience</span>
+                    </h3>
 
+                    <div class="resume__list grid">
+                        <!-- Experience 1 -->
+                        <div class="resume__data">
+                            <h3 class="resume__title">Full stack developer</h3>
+
+                            <div class="resume__info">
+                                <address>Magical Balloons</address>
+                                <address>present</address>
+                            </div>
+
+                            <p class="resume__description"> Building and maintaning a website</p>
+                        </div>
+                        <!-- Experience 2 -->
+                        <div class="resume__data">
+                            <h3 class="resume__title">Java Developer</h3>
+
+                            <div class="resume__info">
+                                <address>(company name)</address>
+                                <address>(years)</address>
+                            </div>
+
+                            <p class="resume__description"></p>
+                        </div>
+                        <!-- Experience 3 -->
+                        <div class="resume__data">
+                            <h3 class="resume__title">Spring Boot developer</h3>
+
+                            <div class="resume__info">
+                                <address>(company name)</address>
+                                <address>(years)</address>
+                            </div>
+
+                            <p class="resume__description"></p>
+                        </div>
+                    </div>
+                </div>
+            <!-- Education -->
+                <div class="resume__content grid">
+                    <h3 class="resume__subtitle">
+                        <i class="ri-graduation-cap-fill"></i>
+                        <span>Education</span>
+                    </h3>
+
+                    <div class="resume__list grid">
+                        <!-- Education 1 -->
+                        <div class="resume__data">
+                            <h3 class="resume__title">BCA (Bachelor of Computer Application)</h3>
+
+                            <div class="resume__info">
+                                <address>Yashwant Rao Chavan University</address>
+                                <address>2021 - 2024</address>
+                            </div>
+
+                            <p class="resume__description">describe here</p>
+                        </div>
+                        <!-- Education 2 -->
+                        <div class="resume__data">
+                            <h3 class="resume__title">Hightest Secondry School</h3>
+
+                            <div class="resume__info">
+                                <address>VVV</address>
+                                <address>(years)</address>
+                            </div>
+
+                            <p class="resume__description"></p>
+                        </div>
+                        <!-- Education 3 -->
+                        <div class="resume__data">10TH SSC
+                            <h3 class="resume__title"></h3>
+
+                            <div class="resume__info">
+                                <address>vvv</address>
+                                <address>(years)</address>
+                            </div>
+
+                            <p class="resume__description"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- CONTACT -->
@@ -147,7 +353,7 @@
     <script src=""></script>
 
     <!-- TYPED JS -->
-    <script src=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
 
     <!-- EMAIL JS -->
     <script src=""></script>
