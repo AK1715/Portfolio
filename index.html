@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon1.png" type="image/x-icon">
 
     <!-- REMIXICON -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
@@ -25,7 +25,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li>
-                        <a href="#home" class="nav__link">Home</a>
+                        <a href="#home" class="nav__link active-link">Home</a>
                     </li>
                     <li>
                         <a href="#about" class="nav__link">About</a>
@@ -64,7 +64,7 @@
             <div class="home__container container grid">
                 <div class="home__content">
                     <div class="home__image">
-                        <img src="assets/img/favicon.png" alt="image" class="home__img">
+                        <img src="assets/img/akshay.jpg" alt="image" class="home__img">
                     </div>
 
                     <div class="home__social">
@@ -86,7 +86,7 @@
                     </div>
                 </div>
 
-                <div class="home_data grid">
+                <div class="home__data grid">
 
                     <!-- ===== Add Role Here ======= -->
                     <p class="home_subtitle">
@@ -118,7 +118,7 @@
         <!-- ABOUT -->
         <section class="about section" id="about">
             <div class="about__container container grid">
-                <div class="about_content">
+                <div class="about__content">
                     <div class="about__data">
                         <h2 class="section__title"> About Me</h2>
 
@@ -163,7 +163,7 @@
                 </div>
 
                 <div class="about__image">
-                    <img src="assets/img/favicon.png
+                    <img src="assets/img/akshay.jpg
                     " alt="image" class="about__img">
                 </div>
             </div>
@@ -256,7 +256,7 @@
                     <div class="resume__list grid">
                         <!-- Experience 1 -->
                         <div class="resume__data">
-                            <h6 class="resume__title">Full stack developer</h6>
+                            <h3 class="resume__title">Full stack developer</h3>
 
                             <div class="resume__info">
                                 <address>Magical Balloons</address>
@@ -267,28 +267,29 @@
                         </div>
                         <!-- Experience 2 -->
                         <div class="resume__data">
-                            <h6 class="resume__title">Java Developer</h6>
+                            <h3 class="resume__title">Java Developer</h3>
 
                             <div class="resume__info">
                                 <address>(company name)</address>
                                 <address>(years)</address>
                             </div>
 
-                            <p class="resume__description"></p>
+                            <p class="resume__description">description here</p>
                         </div>
                         <!-- Experience 3 -->
                         <div class="resume__data">
-                            <h6 class="resume__title">Spring Boot developer</h6>
+                            <h3 class="resume__title">Spring Boot developer</h3>
 
                             <div class="resume__info">
                                 <address>(company name)</address>
                                 <address>(years)</address>
                             </div>
 
-                            <p class="resume__description"></p>
+                            <p class="resume__description">description here</p>
                         </div>
                     </div>
                 </div>
+
             <!-- Education -->
                 <div class="resume__content grid">
                     <h3 class="resume__subtitle">
@@ -299,7 +300,7 @@
                     <div class="resume__list grid">
                         <!-- Education 1 -->
                         <div class="resume__data">
-                            <h6 class="resume__title">BCA (Bachelor of Computer Application)</h6>
+                            <h3 class="resume__title">BCA (Bachelor of Computer Application)</h3>
 
                             <div class="resume__info">
                                 <address>Yashwant Rao Chavan University</address>
@@ -310,25 +311,25 @@
                         </div>
                         <!-- Education 2 -->
                         <div class="resume__data">
-                            <h6 class="resume__title">Hightest Secondry School</h6>
+                            <h3 class="resume__title">Hightest Secondry School</h3>
 
                             <div class="resume__info">
                                 <address>VVV</address>
                                 <address>(years)</address>
                             </div>
 
-                            <p class="resume__description"></p>
+                            <p class="resume__description">description here</p>
                         </div>
                         <!-- Education 3 -->
-                        <div class="resume__data">10TH SSC
-                            <h6 class="resume__title"></h6>
+                        <div class="resume__data">
+                            <h3 class="resume__title">10TH SSC</h3>
 
                             <div class="resume__info">
                                 <address>vvv</address>
                                 <address>(years)</address>
                             </div>
 
-                            <p class="resume__description"></p>
+                            <p class="resume__description">description here</p>
                         </div>
                     </div>
                 </div>
@@ -337,26 +338,111 @@
 
         <!-- CONTACT -->
         <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
 
+            <div class="contact__container container grid">
+                <form action="" class="contact__form grid" id="contact-form">
+                    <input type="text" placeholder="Names" name="user_name" required class="contact__input">
+                    <input type="email" placeholder="Email" name="user_email" required class="contact__input">
+                    <textarea placeholder="Message" name="user_message" required class="contact__input contact__area"></textarea>
+
+                    <button type="submit" class="button">Send Message</button>
+
+                    <p class="contact__message" id="contact-message"></p>
+                </form>
+
+                <div class="contact__content grid">
+                    <div class="contact__data grid">
+                        <!-- EMAIL -->
+                        <address class="contact__address">
+                            <i class="ri-mail-fill"></i>
+                            <span>akshayvishwakarma770@gmail.com</span>
+                        </address>
+                        <!-- PHONE NUMBER -->
+                        <address class="contact__address">
+                            <i class="ri-smartphone-fill"></i>
+                            <span>7709123609</span>
+                        </address>
+                        <!-- LOCATION -->
+                        <address class="contact__address">
+                            <i class="ri-map-2-fill"></i>
+                            <span>Mumbai, Maharashtra</span>
+                        </address>
+                        <!-- TIMING -->
+                        <address class="contact__address">
+                            <i class="ri-time-fill"></i>
+                            <span>Available, Mon-Fri, 9AM-6PM</span>
+                        </address>
+                    </div>
+
+                    <div class="contact__social">
+                        <!-- WHATSAPP -->
+                        <a href="" target="_blank" class="contact__link">
+                            <i class="ri-whatsapp-fill"></i>
+                        </a>
+                        <!-- MESSAGE -->
+                        <a href="" target="_blank" class="contact__link">
+                            <i class="ri-message-fill"></i>
+                        </a>
+                        <!-- TELEGRAM -->
+                        <a href="" target="_blank" class="contact__link">
+                            <i class="ri-telegram-2-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
+        <div class="footer__container container grid">
+            <a href="#" class="footer__logo">AK</a>
 
+            <div class="footer__links">
+                <a href="#home" class="footer__link">Home</a>
+
+                <a href="#about" class="footer__link">About</a>
+
+                <a href="#projects" class="footer__link">Projects</a>
+            </div>
+
+            <!-- FOOTER SOCIAL LINK -->
+            <div class="footer__social">
+                <a href="" target="_blank" class="footer__social-link">
+                    <i class="ri-facebook-circle-fill"></i>
+                </a>
+                <a href="" target="_blank" class="footer__social-link">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+                <a href="" target="_blank" class="footer__social-link">
+                    <i class="ri-twitter-x-fill"></i>
+                </a>
+                <a href="" target="_blank" class="footer__social-link">
+                    <i class="ri-youtube-fill"></i>
+                </a>
+            </div>
+        </div>
+
+        <span class="footer__copy">
+            &#169; All Rights Reserved By AK
+        </span>
     </footer>
 
     <!-- SCROLL UP -->
+     <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+     </a>
 
     <!-- SCROLLREVEAL -->
-    <script src=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
 
     <!-- TYPED JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
 
     <!-- EMAIL JS -->
-    <script src=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <!-- MAIN JS -->
     <script src="assets/js/main.js"></script>
