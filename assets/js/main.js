@@ -30,7 +30,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /* ================== HOME TYPED JS =================== */
 const typedHome = new Typed('#home-typed', {
-    strings: ['Full Stack Developer', 'Java Developer', 'Web Developer'], // Insert professions here*****
+    strings: ['Full Stack Developer', 'Full Stack Developer', 'Full Stack Developer'], // Insert professions here*****
     typeSpeed: 80,
     backSpeed: 40,
     backDelay: 2000,
@@ -46,3 +46,83 @@ const shadowHeader = () =>{
                         : header.classList.remove('shadow-header')
 }
 window.addEventListener('scroll', shadowHeader)
+
+/*==================== CONTACT EMAIL JS ==================*/
+const contactForm = document.getElementById('contact-form'),
+        contactMessage = document.getElementById('contact-message')
+
+const sendEmail = (e) =>{
+    e.preventDefault()
+
+    /*
+        The code for sending emails is a sample test.
+
+        Create your account at https://www.emailjs.com/
+        and follow the instructions in the video and images
+        to send emails with your account.
+    */
+
+    // serviceID -templateID- #form - publicKey
+    emailjs.sendForm('service_wgxjbse','template_2gn1ct4','#contact-form','VL_V9uFNYcWJRfBc_').then(() =>{
+        // Show sent message
+        contactMessage.textContent = 'Message sent successfully ✅'
+
+        // Remove message after five seconds
+        setTimeout(() => {
+            contactMessage.textContent = ''
+        }, 5000)
+
+        // clear input fileds 
+        contactForm.reset()
+    }, () => {
+        // show error message
+        contactMessage.textContent = 'Message not send (service error) ❌'
+    })
+}
+contactForm.addEventListener('submit', sendEmail)
+
+
+/*============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const scrollUp = () => {
+    const scrollUp = document.getElementById('scroll-up')
+    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                        : scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
+
+/*================= SCROLL SECTIONS ACTIVE LINK =================*/
+const sections = document.querySelectorAll('section[id]')
+
+const scrollActive = () => {
+    const scrollDown = window.scrollY
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight,
+              sectionTop =current.offsetTop - 58,
+              sectionId = current.getAttribute('id'),
+              sectionClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+
+              if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight){
+                sectionClass.classList.add('active-link')
+              }else{
+                sectionClass.classList.remove('active-link')
+              }
+    })
+}
+window.addEventListener('scroll', scrollActive)
+
+/*==================== SCROLL REVEAL ANIMATION ====================*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2000,
+    // reset: true, // Animations repeat
+})
+
+sr.reveal(`.home__content, .resume__content:nth-child(1), .footer__container`)
+sr.reveal(`.home__data, .resume__content:nth-child(2)`, {delay: 300, origin: 'bottom'})
+
+sr.reveal(`.about__content, .contact__content`, {origin: 'bottom'})
+sr.reveal(`.about__image, .contact__form`, {delay: 300})
+
+sr.reveal(`.projects__card`, {intervel: 100})
